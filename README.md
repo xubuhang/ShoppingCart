@@ -1,0 +1,2 @@
+# ShoppingCart
+用ExpandableView实现淘宝购物车效果
