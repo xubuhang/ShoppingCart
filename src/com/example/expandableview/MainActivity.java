@@ -266,6 +266,7 @@ public class MainActivity extends Activity
 				
 				@Override
 				public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+					if(!buttonView.isPressed())return;	//区分开人为点击和setChecked加这一条，否则当我setChecked()时会触发此listener 
 					if (isChecked) {
 						Toast.makeText(MainActivity.this, "点击group的RadioButton，选中", Toast.LENGTH_SHORT).show();
 						group_list.get(groupPosition).setSecleted(true);
@@ -333,6 +334,7 @@ public class MainActivity extends Activity
 				
 				@Override
 				public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+					if(!buttonView.isPressed())return;	//区分开人为点击和setChecked加这一条，否则当我setChecked()时会触发此listener 
 					if (isChecked) {
 						Toast.makeText(MainActivity.this, "点击item的RadioButton，选中", Toast.LENGTH_SHORT).show();
 						item_list.get(groupPosition).get(childPosition).setSecleted(true);
