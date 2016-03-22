@@ -17,4 +17,12 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+        <style name="CheckBoxStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+          <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/btn_choice_ring_selector</item>
+    </style>
 </resources>
